@@ -1,0 +1,155 @@
+$font-stack: "Times New Roman", "Helvetica", san-serif;
+$project-card-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+html {
+    font-family: 100% $font-stack;
+    font-size: 15px;
+}
+
+.name-logo { 
+    margin-top: 5rem;
+    margin-left: 1rem;
+    width: 12rem;
+}
+
+.mulu {
+    font-family: 'Noto Sans SC', sans-serif;
+    font-size: 24px;
+    margin-top: 5rem;
+    margin-right: 1rem;
+    max-width: 200px;
+    position: relative;
+}
+
+.dropdown {
+    position: absolute;
+    left: 0;
+    top: calc(100% + .5rem);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: all 150ms ease-in-out;
+}
+
+.dropdown.active {
+    pointer-events: auto;
+    transform: translateY(0);
+    opacity: 1;    
+}
+
+.nav-link {
+    font-family: Helvetica;
+    text-decoration: none;
+    color: black;
+}
+
+.section-divider {
+    box-shadow: 0 10px 6px -6px #222;
+}
+
+.row {
+    margin-bottom: 50px;
+}
+
+.project-cover {
+    transition: all .3s ease-in-out;
+}
+
+.project-cover:hover {
+    transform: scale(1.01);
+    box-shadow: $project-card-shadow;
+}
+
+.work-title {
+    font-family: "Times New Roman";
+    color: #aaaaaa;
+    mix-blend-mode: difference;
+    font-size: 10vw;
+    z-index: 10;
+    pointer-events: none;
+    transition: all .3s ease-in-out;
+}
+
+.work-title.fadeUp {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+
+.footer-container {
+    min-height: 10vh;
+    display: flex;
+}
+
+.brah {
+    border: 1px solid #000;
+}
+
+.rightsClaim {
+    color:#696969;
+}
+
+.fa {
+    margin-left: 10px;
+    color: black;
+}
+
+@media screen and (min-width: 768px){
+    .name-logo {
+        position: fixed;
+        margin-top: 2rem;
+        width: 12vw;
+    }
+
+    .mulu {
+        position: fixed;
+        right: 4rem;
+        margin-top: 2rem;
+    }
+
+    .section-divider {
+        display: none;
+    }
+
+    .footer-container {
+        height: 15vh;
+    }
+
+    .work-title {
+        position: fixed;
+        bottom: 0px;
+        left: 40px;
+        opacity: 0;
+    }
+
+    .work-title.fadeUp {
+        opacity: 1;
+        transform: translateY(-20px);
+    }
+}
+
+.about {
+    margin-top: 15%;
+}
+
+.naenae-wrapper {
+    position: relative;
+    height:100%;
+}
+
+.naenae{
+    position: absolute;
+    top: 0;
+}
+
+.nae {
+    z-index: 1;
+}
+
+.whip {
+    z-index: 0;
+}
+
+#naenae-btn {
+    margin-top: 5rem;
+}

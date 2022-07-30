@@ -1,0 +1,23 @@
+{
+  "name": "jz-photo-portfolio",
+  "version": "1.0.0",
+  "description": "Justin Zhao Photography",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justinz99/photo-portfolio.git"
+  },
+  "keywords": [
+    "justinzhao",
+    "photography"
+  ],
+  "author": "Justin Zhao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/justinz99/photo-portfolio/issues"
+  },
+  "homepage": "https://github.com/justinz99/photo-portfolio#readme"
+}
