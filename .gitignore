@@ -1,4 +1,6 @@
-assets
+node_modules/
+assets/
 test.html
 test.css
 test.js
+project_template.html
