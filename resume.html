@@ -23,14 +23,14 @@
         <div class="container-fluid">
             <div class="row justify-content-between">
                 <div class="col">
-                    <div class="name-logo">
+                    <div class="name-logo slide" id="nameLogo">
                         <a href="https://www.yomama.com"><img src="assets/name-logo.svg" alt="Justin Zhao"/></a>
                     </div>
                 </div>
 
                 <div class="col">
                     <div class="mulu float-end">
-                        <button class="mulu-btn" lang="cmn">目录</button>
+                        <button class="mulu-btn" lang="cmn" id="muluBtn">目录</button>
                         <nav class="dropdown" id="navLinks">
                             <a href="index.html" class="nav-link">Projects</a>
                             <a href="resume.html" class="nav-link">Resume</a>
@@ -38,24 +38,92 @@
                         </nav>
                     </div>
                 </div>
-
             </div>
         </div>
     </header>
 
     <!-- content -->
-    <section class="about">
-        <div class="container">
+    <section>
+        <div class="container  resume-offset">
+            <div class="row mb-3 socials">
+                <div class="col-3">
+                    <a href="https://instagram.com/justinzzhao"><i class="fa fa-brands fa-instagram fa-xl"></i></a>
+                    <a href="mailto:justinzhao1999@gmail.com"><i class="fa fa-regular fa-envelope fa-lg"></i></a>
+                    <a href="https://www.linkedin.com/in/jz1999/"><i class="fa fa-brands fa-linkedin fa-xl"></i></a>
+                </div>
+            </div>
             <div class="row justify-content-center">
-                <div class="col d-flex">
-                    <div class="mx-auto">
-                        <embed src="assets/resume.pdf" width="850px" height="1150px" />
+                <div class="col-lg-3 d-flex flex-column">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <div class="card-title"><h3>Education</h3></div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <b>University of Washington '22</b><br>
+                                    B.A. Photo/Media <br>
+                                    Minor: Applied Mathematics
+                                </li>
+                                <li class="list-group-item">
+                                    <b>Nucamp Coding Bootcamp</b> <br>
+                                    Front-end Web + Mobile Development
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <div class="card-title"><h3>Skills</h3></div>
+                            <p class="ps-3">Photography + Videography <br>
+                            Adobe Ps + Lr + Ai + Pr + Xd<br>
+                            Creative Direction <br>
+                            
+                            Java <br>
+                            HTML <br>
+                            Bootstrap <br>
+                            JavaScript <br>
+                            UI/UX
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title"><h3>Experiences</h3></div>                        
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <a href="https://stall7studios.com/"><b><i class="fa-solid fa-link"></i> Stall7 Studio</b></a> <br>
+                                    <div class="resume-date">July 22 - present</div>
+                                    Passion projects with friends <br>
+                                </li>
+                                <li class="list-group-item">
+                                    <b>Washington Football</b> <br>
+                                    Student Filmer <br>
+                                    <div class="resume-date">June 21 - April 22</div>
+                                    Filmed practice and game footages for internal review <br>
+                                </li>
+                                <li class="list-group-item">
+                                    <b>Rowland Studio</b> <br>
+                                    Intern Photographer <br>
+                                    <div class="resume-date">June 21 - September 21</div>
+                                    Photographed + Edited graduation ceremonies, new school IDs. Set up studio for private portraits <br>
+                                </li>
+                                <li class="list-group-item">
+                                    <b>Washington Hyperloop</b> <br>
+                                    Designer, Design Team Manager <br>
+                                    <div class="resume-date">October 19 - June 21</div>
+                                    Led a team of 4 undergrads in the engineering club to research, design a branding package and new <a href="https://washington-hyperloop.webflow.io"><i class="fa-solid fa-link"></i><i>website</i></a> on Webflow
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
+    
     <footer>
         <div class="container-fluid footer-container align-items-end text-center">
             <div class="row mb-3 mx-auto">
@@ -68,7 +136,7 @@
             </div>
         </div>
     </footer>
-    
+
     <script src="main.js"></script>
 </body>
 
