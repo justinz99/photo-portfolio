@@ -1,7 +1,7 @@
 // home title slide up
 if (window.innerWidth >= 768) { 
     const covers = document.querySelectorAll(".project-cover");
-    const title = document.querySelectorAll(".work-title");
+    const title = document.querySelectorAll(".project-title");
     for (let i = 0; i < covers.length; i++) {
         covers[i].addEventListener('mouseover', () => {
             title[i].classList.add('fadeUp');
@@ -44,14 +44,19 @@ function naeNae() {
     }
 }
 
-//project img on top
-document.addEventListener('click', e => {
-    let selectedImg = e.target;
-    if (selectedImg.matches('.project-img')) {
-        e.target.classList.toggle('onTop');
-    }
+// project img on top
+function changeImgOnTop(element) {
+    element.classList.toggle('onTop');
     document.querySelectorAll('.project-img.onTop').forEach(img => {
-        if (img === selectedImg) return;
+        if (img === element) return;
         img.classList.remove('onTop'); 
     }) 
+}
+
+
+document.addEventListener('click', e => {
+    let element = e.target;
+    if (element.matches('.project-img')) {
+        changeImgOnTop(element);
+    }
 })
