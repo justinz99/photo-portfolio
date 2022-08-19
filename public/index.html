@@ -13,19 +13,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../src/css/styles.css" />
 
     <title>JZ's Pushing-P Photo Portfolio</title>
 
 </head>
 
 <body>
+    
     <header>
         <div class="container-fluid">
             <div class="row justify-content-between">
                 <div class="col">
                     <div class="name-logo">
-                        <img src="assets/name-logo.svg" alt="Justin Zhao"/>
+                        <img src="../assets/name-logo.svg" alt="Justin Zhao">
                     </div>
                 </div>
 
@@ -34,54 +35,62 @@
                         <button class="mulu-btn" lang="cmn" id="muluBtn">目录</button>
                         <nav class="dropdown" id="navLinks">
                             <a href="index.html" class="nav-link">Projects</a>
-                            <a href="resume.html" class="nav-link">Resume</a>
-                            <a href="about.html" class="nav-link">About</a>
+                            <a href="../src/resume.html" class="nav-link">Resume</a>
+                            <a href="../src/about.html" class="nav-link">About</a>
                         </nav>
                     </div>
                 </div>
-
             </div>
         </div>
     </header>
-
-    <section class="about-offset">
+    
+<!--content -->
+    <section>
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xs-8 col-md-4">
-                    <div class="naenae-wrapper mx-auto">
-                        <img src="assets/stand.png" alt="stand" class="img-fluid naenae" id="meStand">
-                        <img src="assets/whip.png" alt="whip" class="img-fluid naenae-whip naenae" id="meWhip">
-                        <img src="assets/nae.png" alt="nae-nae" class="img-fluid naenae-nae naenae" id="meNae">
+            <div class="row">
+                <div class="col-md-6 mx-auto mt-5">
+                    <div class="content">
+                        <a href="../src/me-you.html"><img src="../assets/projects/angels/2.jpg" class="img-fluid rounded project-cover"></a>
+                        <h1 class="project-title">Me \ You</h1>
                     </div>
-                </div>
-                <div class="col-md-5 d-flex flex-column">
-                    <div class="row mt-3 order-md-last">
-                        <div class="col d-flex justify-content-center justify-content-md-start">
-                            <button id="naenae-btn" class="mx-3" onclick="naeNae()">Watch Me</button>
-                        </div>
-                    </div>
-                    <div class="row order-md-first">
-                        <div class="col-12 mt-md-5">
-                            <p class="lh-lg mx-3">Hi, my name is Justin. I got my first Canon when I was 14. <br/>
-                                I photograph the streets, my friends, the views, and just anything around me.<br/>
-                                <br/>
-                                Please feel free to reach out. <br/>
-                                gear: Fujifilm XT-3, 16-80mm F4, 18mm F2 <br/>
-                            </p>
-                        </div>
-                    </div>
-
                 </div>
             </div>
-        </div>
 
+            <div class="row">
+                <div class="col-md-7 mx-auto"> <!-- horizontal image use col-7 -->
+                    <div class="content">
+                        <a href="../src/herenow.html"><img src="../assets/projects/hoop/1.jpg" class="img-fluid rounded project-cover"></a>
+                        <h1 class="project-title">Here, Now</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-7 mx-auto">
+                    <div class="content">
+                        <a href="../src/the-boys.html"><img src="../assets/projects/the-boys/3.jpg" class="img-fluid rounded project-cover"></a>
+                        <h1 class="project-title">The Boys</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-7 mx-auto">
+                    <div class="content">
+                        <a href="../src/streets.html"><img src="../assets/projects/personal/de street/6.jpg" class="img-fluid rounded project-cover"></a>
+                        <h1 class="project-title">Streets</h1>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </section>
 
     <footer>
-        <div class="container-fluid footer-container align-items-end text-center">
+        <div class="container footer-container align-items-end text-center">
             <div class="row mb-3 mx-auto">
                 <div class="col"> 
-                    <p class="footnote">All images by me. Website by me too.</p>
+                    <p class="footnote">All images by me. This website is a HTML/Bootstrap project for my bootcamp.</p>
                     <a href="https://instagram.com/justinzzhao"><i class="fa fa-brands fa-instagram fa-xl"></i></a>
                     <a href="mailto:justinzhao1999@gmail.com"><i class="fa fa-regular fa-envelope fa-lg"></i></a>
                     <a href="https://www.linkedin.com/in/jz1999/"><i class="fa fa-brands fa-linkedin fa-xl"></i></a>
@@ -90,9 +99,9 @@
         </div>
     </footer>
 
+    <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-    <script src="main.js"></script>
-    
+    <script src="../src/js/main.js"></script>
 </body>
 </html>

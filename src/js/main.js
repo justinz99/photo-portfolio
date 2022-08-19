@@ -9,6 +9,12 @@ if (window.innerWidth >= 768) {
         covers[i].addEventListener('mouseleave', () => {
             title[i].classList.remove('fadeUp');
         })
+        covers[i].addEventListener('mousemove', function(e) {
+            let x = e.clientX;
+            let y = e.clientY;
+            title[i].style.left = x + 'px';
+            title[i].style.top = y + 'px';
+        })
     }
 }
 
@@ -23,7 +29,7 @@ const naenaeBtn = document.getElementById('naenae-btn');
 const meNaenae = document.getElementById('meNae');
 const meWhip = document.getElementById('meWhip');
 var numClicks = 0;
-var naenaeCount = 0;
+
 
 function naeNae() {
     document.getElementById('meStand').style.opacity = 0;
@@ -32,7 +38,6 @@ function naeNae() {
     if (numClicks % 5 == 2 || numClicks % 5 == 0) {
         meNaenae.style.opacity = 1; 
         meWhip.style.opacity = 0;
-        naenaeCount++;
     } else {
         if (numClicks % 5 == 4){
             meWhip.classList.add('flipped');

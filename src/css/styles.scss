@@ -34,6 +34,7 @@ a {
 
 body, header, section, footer {
     background-color: $background-color;
+    // background-color: $dark-background-color;
 }
 
 .name-logo {
@@ -109,11 +110,12 @@ body, header, section, footer {
         font-size: 10vw;
         z-index: 10;
         pointer-events: none;
-        transition: all .3s ease-in-out;
+        transition: translate .3s ease-in-out, opacity .3s ease-in-out;
 
         &.fadeUp {
             opacity: 1;
-            transform: translateY(0);
+            // transform: translate (0, -20px);
+            transform: translate(-50%, -50%);
         }
     }
 
@@ -231,24 +233,23 @@ body, header, section, footer {
     }
 
     .footer-container {
+        margin-top: 5vh;
         height: 15vh;
     }
 
     .project {
         &-cover {
             margin-bottom: 5rem;
+            cursor: none;
         }
 
         &-title {
             position: fixed;
-            margin-bottom: 0;
-            bottom: 20vh;
-            right: 30px;
             opacity: 0;
-            
+            transform: translate(-50%, -50%);
+
             &.fadeUp {
                 opacity:1;
-                transform: translateY(-20px);
             }
         }
     }
@@ -445,3 +446,5 @@ body, header, section, footer {
     width: 90%;
     max-width: 900px;
 }
+
+

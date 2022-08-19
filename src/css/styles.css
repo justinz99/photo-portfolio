@@ -106,11 +106,11 @@ body, header, section, footer {
   font-size: 10vw;
   z-index: 10;
   pointer-events: none;
-  transition: all 0.3s ease-in-out;
+  transition: translate 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 .project-title.fadeUp {
   opacity: 1;
-  transform: translateY(0);
+  transform: translate(-50%, -50%);
 }
 .project-img {
   position: absolute;
@@ -212,21 +212,20 @@ body, header, section, footer {
     margin-top: 18%;
   }
   .footer-container {
+    margin-top: 5vh;
     height: 15vh;
   }
   .project-cover {
     margin-bottom: 5rem;
+    cursor: none;
   }
   .project-title {
     position: fixed;
-    margin-bottom: 0;
-    bottom: 20vh;
-    right: 30px;
     opacity: 0;
+    transform: translate(-50%, -50%);
   }
   .project-title.fadeUp {
     opacity: 1;
-    transform: translateY(-20px);
   }
   .naenae-wrapper {
     width: 100%;
